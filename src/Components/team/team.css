@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-main: rgb(217, 170, 31);
+  --main-font: "Public Sans", sans-serif;
+  --text-color: rgb(45, 45, 45);
+  --other-text: rgb(122, 122, 122);
+  --shadow: 2px 5px 12px gray;
+  --boxshadow: 0 5px 10px black;
+  --textcolor: #373737;
+  --color-page: rgb(217, 170, 31);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+.user-box img {
+  width: 250px;
+  border-radius: 10px;
+}
+.user-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  border-radius: 10px;
+}
+.user-box h3 {
+  font-size: 30px;
+  color: var(--text-color);
+}
+.grid-team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 50px 0;
+}
+.flex-detial {
+  padding: 50px 0;
+}
+.grid-team a {
+  text-decoration: none;
+}
+.contact-page {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+.contact h2 {
+  text-align: center;
+  font-family: var(--main-font);
+  margin-top: 20px;
+  font-size: 30px;
+  color: var(--textcolor);
+}
+.contact h4 {
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 20px;
+  color: var(--textcolor);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+form input {
+  width: 500px;
+  height: 50px;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px var(--color-page) solid;
+  box-shadow: var(--boxshadow);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 15px;
+}
+.submit {
+  width: 200px;
+  border-radius: 10px;
+  border: 5px var(--color-page) solid;
+  box-shadow: var(--boxshadow);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.email {
+  margin-top: 20px;
+}
+.sms {
+  margin-top: 20px;
+}
+textarea {
+  width: 500px;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px var(--color-page) solid;
+  box-shadow: var(--boxshadow);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 15px;
+}
+label {
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--main-font);
+}
+.verify img {
+  width: 30px;
+}
+.verify {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.verify h5 {
+  font-size: 15px;
+  color: #fff;
+  font-family: var(--main-font);
+}
+.contact {
+  padding: 50px 0;
+}

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-main: rgb(217, 170, 31);
+  --main-font: "Public Sans", sans-serif;
+  --text-color: rgb(45, 45, 45);
+  --other-text: rgb(122, 122, 122);
+  --shadow: 2px 5px 12px gray;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-main);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-main);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+.headimg {
+  height: 30vh;
+}
+.image-head {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(./about-images/motobike.jpg);
+  z-index: -1;
+  background-size: cover;
+  background-position-y: -200px;
+}
+.link-about {
+  margin-top: 50px;
+}
+.flex-link {
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+  font-size: 20px;
+}
+.flex-link a {
+  text-decoration: none;
+  color: #000;
+}
+.phone-number {
+  height: 200px;
+  background-image: linear-gradient(
+      rgba(58, 58, 58, 0.75),
+      rgba(58, 58, 58, 0.75)
+    ),
+    url(./about-images/motobike.jpg);
+  background-size: cover;
+  background-position-y: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-phonenumber h1 {
+  color: #fff;
+}
+.bg-phonenumber span {
+  margin-left: 30px;
+  color: var(--color-main);
+}

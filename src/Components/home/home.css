@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-main: rgb(217, 170, 31);
+  --main-font: "Public Sans", sans-serif;
+  --text-color: rgb(45, 45, 45);
+  --other-text: rgb(122, 122, 122);
+  --shadow: 2px 5px 12px gray;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+.konhome {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-konhome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.image-moto img {
+  width: 700px;
+  position: relative;
+  top: -40px;
+}
+.text-konhome h5 {
+  margin-top: 50px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.text-konhome h2 {
+  margin-top: 10px;
+  font-size: 40px;
+  color: var(--text-color);
+}
+.text-konhome h2 span {
+  color: var(--color-main);
+}
+.text-konhome {
+  width: 500px;
+}
+.text-konhome p {
+  margin-top: 30px;
+  font-size: 17px;
+  color: var(--other-text);
+  line-height: 30px;
+}
+.btn-konhome {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+}
+.btn-konhome .book-ride {
+  padding: 15px 30px;
+  cursor: pointer;
+  border: var(--color-main) 3px solid;
+  font-size: 17px;
+  color: #fff;
+  background: var(--color-main);
+  border-radius: 4px;
+  font-weight: bold;
+}
+.btn-konhome .learn-more {
+  padding: 20px 30px;
+  cursor: pointer;
+  border: var(--text-color) 3px solid;
+  font-size: 17px;
+  color: #fff;
+  background: var(--text-color);
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+}
+.btn-konhome .learn-more:hover {
+  border: 3px black solid;
+  background: #fff;
+  color: var(--text-color);
+}
+.grid-booking {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.text-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+select,
+input[type="date"],
+.search button {
+  height: 50px;
+  padding: 0 10px;
+  color: var(--other-text);
+  font-size: 15px;
+  outline: none;
+}
+.booking {
+  padding: 50px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  margin-top: 100px;
+}
+.booking h3 {
+  font-size: 25px;
+  color: var(--text-color);
+  font-weight: 800;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title span {
+  color: red;
+}
+.search button {
+  border: none;
+  background: var(--color-main);
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quickeasy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.flex-quicks {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 70px;
+  margin-top: 50px;
+}
+.quickeasy h4 {
+  text-align: center;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.quickeasy h1 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--text-color);
+  margin-top: 20px;
+}
+.flex-quick img {
+  width: 130px;
+}
+.flex-quick {
+  width: 300px;
+  text-align: center;
+}
+.flex-quick p {
+  margin-top: 20px;
+  font-size: 17px;
+  color: var(--text-color);
+  line-height: 25px;
+}
+
+.Faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq h3 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 20px;
+}
+.faq h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+  color: var(--text-color);
+}
+.faq .head-p {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.show-info {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+  gap: 20px 0;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}
+.icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  height: 70px;
+  padding: 0 20px;
+}
+.text-show {
+  margin-top: 20px;
+  display: none;
+}
+.text-show.active {
+  display: block;
+  padding: 0 20px;
+  font-size: 17px;
+  color: var(--text-color);
+  line-height: 25px;
+}
+.text-show.actives {
+  display: block;
+  padding: 0 20px;
+  font-size: 17px;
+  color: var(--text-color);
+  line-height: 25px;
+}
+.text-show.activess {
+  display: block;
+  padding: 0 20px;
+  font-size: 17px;
+  color: var(--text-color);
+  line-height: 25px;
+}
+.show-one {
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.icon-text.show-bg {
+  background: var(--color-main);
+  color: #fff;
+}
+.icon-text.show-bg h3 {
+  color: #fff;
+}
+.icon-text:hover {
+  background: var(--color-main);
+  color: #fff;
+}
+.icon-text:hover h3 {
+  color: #fff;
+}
+.flex-footer {
+  display: flex;
+  gap: 0 30px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.moto-rental-footer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.moto-rental-footer p {
+  line-height: 30px;
+  font-size: 17px;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+.moto-rental-footer h4 {
+  margin-top: 30px;
+  font-size: 18px;
+  color: var(--text-color);
+}
+.moto-rental-footer h5 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: var(--text-color);
+}
+.company-footer,
+.working-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  font-size: 18px;
+  color: var(--text-color);
+}
+.sub-footer {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  gap: 15px 0;
+}
+.sub-footer input[type="email"] {
+  height: 50px;
+  background: #eee;
+  border: none;
+  outline: none;
+  padding: 20px;
+}
+.sub-footer .btn-submit {
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: var(--color-main);
+}
+.sub-footer p {
+  font-size: 18px;
+  color: var(--text-color);
+}

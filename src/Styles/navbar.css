@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-main: rgb(217, 170, 31);
+  --main-font: "Public Sans", sans-serif;
+  --text-color: rgb(45, 45, 45);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.logo img {
+  width: 50px;
+}
+.logo-text h3 {
+  font-size: 20px;
+}
+.logo-text h5 {
+  font-size: 15px;
+}
+.logo-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.Navbar ul {
+  display: flex;
+}
+.Navbar ul li {
+  list-style: none;
+  padding: 0 20px;
+}
+.Navbar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
+}
+.Navbar ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-main);
+  transition: 0.4s ease-in-out;
+}
+.Navbar ul li:hover a::after {
+  width: 100%;
+}
+.Navbar ul li:hover a {
+  color: var(--color-main);
+}
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.login button:first-child {
+  background: transparent;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.login button:last-child {
+  background: var(--color-main);
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 15px 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
