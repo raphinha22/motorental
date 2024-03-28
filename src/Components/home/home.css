@@ -13,17 +13,13 @@
   box-sizing: border-box;
   font-family: var(--main-font);
 }
-.konhome {
+
+.flex-konhome {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
-}
-.flex-konhome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 100px;
+  padding: 0 100px;
 }
 .image-moto img {
   width: 700px;
@@ -44,7 +40,7 @@
   color: var(--color-main);
 }
 .text-konhome {
-  width: 300px;
+  width: 500px;
 }
 .text-konhome p {
   margin-top: 30px;
