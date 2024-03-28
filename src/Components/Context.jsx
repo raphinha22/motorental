@@ -11,6 +11,8 @@ const Context = ({ children }) => {
   const [classsone, setclassone] = useState(false);
   const [classstwo, setclasstwo] = useState(false);
 
+  const [Nav, setNav] = useState(false);
+
   const Classlist = () => {
     setclass(!classs);
   };
@@ -20,6 +22,14 @@ const Context = ({ children }) => {
   const Classlisttwo = () => {
     setclasstwo(!classstwo);
   };
+
+  const HandleNavbar = () => {
+    setNav(!Nav);
+  };
+  const HandleNavbartrue = () => {
+    setNav(Nav == false);
+  };
+
   return (
     <GlobeContext.Provider
       value={{
@@ -29,6 +39,9 @@ const Context = ({ children }) => {
         classstwo,
         Classlistone,
         Classlisttwo,
+        Nav,
+        HandleNavbar,
+        HandleNavbartrue,
       }}
     >
       {" "}
