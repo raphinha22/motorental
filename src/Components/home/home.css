@@ -14,10 +14,10 @@
   font-family: var(--main-font);
 }
 .konhome {
-  height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 100px;
 }
 .flex-konhome {
   display: flex;
@@ -44,7 +44,7 @@
   color: var(--color-main);
 }
 .text-konhome {
-  width: 500px;
+  width: 300px;
 }
 .text-konhome p {
   margin-top: 30px;
@@ -103,8 +103,11 @@ input[type="date"],
   font-size: 15px;
   outline: none;
 }
+.pad-booking {
+  padding: 0 100px;
+}
 .booking {
-  padding: 50px;
+  padding: 100px;
   background: #fff;
   box-shadow: var(--shadow);
   border-radius: 4px;
@@ -261,6 +264,7 @@ input[type="date"],
   gap: 0 30px;
   justify-content: space-between;
   margin-top: 100px;
+  padding: 0 100px;
 }
 .moto-rental-footer {
   width: 300px;
@@ -316,4 +320,84 @@ input[type="date"],
 .sub-footer p {
   font-size: 18px;
   color: var(--text-color);
+}
+.flex-footer h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1350px) {
+  .image-moto img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .image-moto img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .flex-konhome {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .text-konhome {
+    text-align: center;
+  }
+  .btn-konhome {
+    justify-content: center;
+  }
+  .grid-booking {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flex-quicks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quickeasy-container {
+    padding: 600px 0;
+  }
+  .flex-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 0;
+  }
+  .moto-rental-footer,
+  .company-footer,
+  .working-footer,
+  .sub-footer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 870px) {
+  .grid-booking {
+    grid-template-columns: 1fr;
+  }
+  .show-info {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .image-moto img {
+    width: 300px;
+  }
+  .show-info {
+    width: 300px;
+  }
+  .quickeasy h1 {
+    font-size: 25px;
+  }
+  .pad-booking {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .text-konhome {
+    width: 200px;
+  }
+  .image-moto img {
+    width: 200px;
+  }
+  .flex-footer h1 {
+    font-size: 20px;
+  }
 }

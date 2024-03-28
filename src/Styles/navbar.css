@@ -12,8 +12,6 @@
   font-family: var(--main-font);
 }
 .container {
-  width: 85%;
-  margin: 0 auto;
   padding-bottom: 30px;
 }
 .Navbar {
@@ -21,6 +19,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  padding: 0 100px;
 }
 .logo {
   display: flex;
@@ -92,4 +91,20 @@
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
+}
+@media screen and (max-width: 1350px) {
+  .icon-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 870px) {
+  .Navbar ul {
+    display: none;
+  }
+  .icon-menu {
+    display: flex;
+  }
+  .login {
+    display: none;
+  }
 }

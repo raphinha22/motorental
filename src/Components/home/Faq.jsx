@@ -1,7 +1,14 @@
 import { Contexts } from "../Context";
 
 const Faq = () => {
-  const { classs, Classlist, classsone, classstwo, Classlistone, Classlisttwo } = Contexts();
+  const {
+    classs,
+    Classlist,
+    classsone,
+    classstwo,
+    Classlistone,
+    Classlisttwo,
+  } = Contexts();
   return (
     <div className="Faq">
       <div className="faq">
@@ -13,7 +20,10 @@ const Faq = () => {
         </p>
         <div className="show-info">
           <div className="show-one">
-            <div className={classs? "icon-text show-bg" : "icon-text"} onClick={Classlist}>
+            <div
+              className={classs ? "icon-text show-bg" : "icon-text"}
+              onClick={Classlist}
+            >
               <h3>1. What is special about comparing rental car deals?</h3>
               <h4>⋗</h4>
             </div>
@@ -27,8 +37,11 @@ const Faq = () => {
             </p>
           </div>
           <div className="show-one">
-            <div className={classsone? "icon-text show-bg" : "icon-text"} onClick={Classlistone}>
-              <h3>1. What is special about comparing rental car deals?</h3>
+            <div
+              className={classsone ? "icon-text show-bg" : "icon-text"}
+              onClick={Classlistone}
+            >
+              <h3>2. How do I find the car rental deals?</h3>
               <h4>⋗</h4>
             </div>
 
@@ -42,8 +55,11 @@ const Faq = () => {
             </p>
           </div>
           <div className="show-one">
-            <div className={classstwo? "icon-text show-bg" : "icon-text"} onClick={Classlisttwo}>
-              <h3>1. What is special about comparing rental moto deals?</h3>
+            <div
+              className={classstwo ? "icon-text show-bg" : "icon-text"}
+              onClick={Classlisttwo}
+            >
+              <h3>3. How do I find such low rental car prices??</h3>
               <h4>⋗</h4>
             </div>{" "}
             <p className={classstwo ? "text-show active" : "text-show"}>

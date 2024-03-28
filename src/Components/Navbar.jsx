@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../Moto-Image/5545574.png";
 import "../Styles/navbar.css";
+import { Menu } from "lucide-react";
 
 const navbar = [
   {
@@ -51,6 +52,9 @@ const Navbar = () => {
           );
         })}
       </ul>
+      <div className="icon-menu">
+        <Menu />
+      </div>
       <div className="login">
         <button>Sign In</button>
         <button>Register</button>
