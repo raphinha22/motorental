@@ -52,6 +52,7 @@
 }
 .link-about {
   margin-top: 50px;
+  padding: 0 100px;
 }
 .flex-link {
   display: flex;
@@ -79,7 +80,30 @@
 .bg-phonenumber h1 {
   color: #fff;
 }
+.bg-phonenumber {
+  display: flex;
+  align-items: center;
+}
 .bg-phonenumber span {
   margin-left: 30px;
   color: var(--color-main);
+  font-size: 30px;
+}
+@media screen and (max-width: 950px) {
+  .bg-phonenumber h1 {
+    font-size: 20px;
+  }
+  .bg-phonenumber span {
+    font-size: 15px;
+  }
+  .phone-number {
+    height: 100px;
+  }
+  .bg-phonenumber {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .image-head {
+    height: 500px;
+  }
 }

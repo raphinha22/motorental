@@ -118,7 +118,7 @@
   font-family: var(--main-font);
   color: #fff;
 }
-.icon-menu{
+.icon-menu {
   display: none;
 }
 @media screen and (max-width: 870px) {
